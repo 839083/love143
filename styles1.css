@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    height: auto;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color:white;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+h1 {
+    color: #333;
+}
+
+.emoji-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.emoji, .sticker {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+button#kissBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button#kissBtn:hover {
+    background-color: #d53f8c;
+    transform: scale(1.05);
+}
+
+.responseBtn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.yesBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.noBtn {
+    background-color: #FF6347;
+    color: white;
+}
+
+.responseBtn:hover {
+    filter: brightness(1.2);
+}
+/* Existing CSS styles... */
+
+.responseBtn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative; /* Add this line */
+}
+
+.noBtn {
+    background-color: #FF6347;
+    color: white;
+    position: absolute; /* Add this line */
+}
+
+#giftBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#giftBtn:hover {
+    background-color: #d53f8c;
+}
